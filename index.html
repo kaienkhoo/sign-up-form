@@ -8,7 +8,77 @@
 </head>
 
 <body>
+    <div class="sidebar">
+        <div class="logo-container">
+            <img class="logo" src="odin.png" alt="odin logo" />
+            <h1>ODIN</h1>
+        </div>
 
+        <p>Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> on <a
+                href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
+                target="_blank">Unsplash</a>
+        </p>
+    </div>
+
+    <div class="main-container">
+        <div class="message">
+            <p>
+                This is not a real online service! You know you need something like this
+                in your life to help you realize your deepest dreams.
+            </p>
+            <p>Sign up <i>now</i> to get started.</p>
+
+            <p>You <i>know</i> you want to.</p>
+        </div>
+
+        <form class="form-container">
+            <fieldset>
+                <h2>Let's do this!</h2>
+
+                <div class="form-row">
+                    <div class="input-field">
+                        <label for="fName">FIRST NAME</label>
+                        <input type="text" id="fName" name="fName" required />
+                    </div>
+
+                    <div class="input-field">
+                        <label for="lName">LAST NAME</label>
+                        <input type="text" id="lName" name="lName" required />
+                    </div>
+                </div>
+
+
+                <div class="form-row">
+                    <div class="input-field">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+
+                    <div class="input-field">
+                        <label for="phoneNum">PHONE NUMBER</label>
+                        <input type="text" id="phoneNum" name="phoneNum" required />
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+                    <div class="input-field">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" required />
+                    </div>
+
+                    <div class="input-field">
+                        <label for="cfmpassword">CONFIRM PASSWORD</label>
+                        <input type="password" id="cfmpassword" name="cfmpassword" required />
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a class="login" href="#">Log in</a></p>
+
+        </form>
+    </div>
 </body>
 
 </html>

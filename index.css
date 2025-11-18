@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url('Norse-Bold.otf');
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    background: url('leaves.png') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 35%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 15%;
+    font-family: Norse-Bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 30%;
+}
+
+.logo {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.logo-container h1 {
+    margin-top: 15px;
+    font-size: 4rem;
+}
+
+.sidebar p {
+    font-size: 0.8rem;
+}
+
+a {
+    color: white;
+}
+
+.main-container {
+    background-color: #f3f4f5;
+    height: 100vh;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.message {
+    margin-top: 10%;
+    padding-left: 60px;
+    width: 75%;
+    height: 30vh;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.message p:last-of-type {
+    margin-top: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vh;
+    margin-bottom: 10%;
+}
+
+.form-container fieldset {
+    padding: 30px 60px;
+    background-color: white;
+    border: none;
+    box-shadow: -2px 6px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+fieldset .form-row {
+    display: flex;
+    gap: 1.5rem;
+    width: 500px;
+    font-size: 0.7rem;
+}
+
+fieldset .input-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.input-field input {
+    height: 25px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.input-field input:focus {
+    box-shadow: 0 2px 6px gray;
+}
+
+.input-field input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
+.form-container button {
+    width: 180px;
+    margin-left: 60px;
+    background-color: #596D48;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.form-container button:hover {
+    cursor: pointer;
+}
+
+.form-container p {
+    margin-left: 60px;
+}
+
+.form-container p a {
+    color: #596D48;
+    text-decoration: none;
+}
